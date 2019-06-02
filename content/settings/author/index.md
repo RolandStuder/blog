@@ -1,6 +1,7 @@
 +++
 headless = true
 name = "Roland Studer"
-image = "avatar.png"
+image = "/img/avatar.png"
 email = "roland.studer@gmail.com"
 +++
+
