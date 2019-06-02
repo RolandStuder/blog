@@ -1,8 +1,8 @@
 +++
 headless = true
-icon = "avatar.png"
-logo = "avatar.png"
-image = "avatar.png"
+icon = "/img/avatar.png"
+logo = "/img/avatar.png"
+image = "/img/avatar.png"
 color = "#ff7260"
 +++
 
