@@ -1,13 +1,14 @@
 +++
-title = "Über mich"
+title = "Roland Studer"
 draft = false
 description = "Seite über mich"
-image = "/img/default-author.png"
+image = "/img/avatar.png"
 +++
-![](/img/default-author.png)
+<mailto:roland.studer@gmail.com>
 
-## Vorname Nachname
+![](/img/avatar.png)
 
-<mailto:info@meineadresse.ch>
+UX Enthusiast, Service Designer, Lernender, Begeisterter, Zeichner, Programmierer…
 
-Beschreibung, wer ich bin...
+
+

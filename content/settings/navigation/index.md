@@ -2,7 +2,7 @@
 headless = true
 
 [[link]]
-title = "Home"
+title = "Blog"
 url = "/"
 
 [[link]]

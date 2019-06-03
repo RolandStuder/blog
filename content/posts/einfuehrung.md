@@ -1,7 +1,7 @@
 +++
 title = "Einführung"
 date = "2019-05-28"
-draft = false
+draft = true
 pinned = false
 tags = [ "Einführung", "Ideen" ]
 description = "In diesem Test-Blogeintrag werden Möglichkeiten aufgezeigt für das Verfassen von Blogeinträgen."
