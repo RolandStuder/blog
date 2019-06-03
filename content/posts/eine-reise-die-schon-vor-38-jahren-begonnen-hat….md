@@ -4,7 +4,6 @@ date = "2019-06-02"
 draft = false
 pinned = false
 description = "Meine Reise durch Leben hat lange begonnen, aber am Ziel sind wir nie. Mein Start mit meinem persönlichen Lernblog."
-image = "/img/abflug.jpg"
 +++
 [Marco](https://www.marco-jakob.ch/) hat mich ermutigt meine Reise durch den Lernprozess Webprogrammierung in einem Lernblog festzuhalten. Im ersten Schritt mache ich das ganz für mich persönlich.
 
