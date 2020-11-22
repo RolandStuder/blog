@@ -1,9 +1,13 @@
 body {
-  max-width: 60rem;
+  max-width: 40rem;
   margin: auto;
+  padding: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 }
 
+pre.highlight {
+  padding: 0.5rem;
+}

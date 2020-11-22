@@ -6,6 +6,12 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload
+# activate :vegas
+activate :syntax
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

@@ -9,6 +9,9 @@
     <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "site" %>
+    <style type="text/css">
+      <%= Rouge::Themes::Github.render(:scope => '.highlight') %>     
+    </style>
   </head>
   <body>
 

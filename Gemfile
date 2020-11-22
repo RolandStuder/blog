@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Middleman Gems
 gem 'middleman', '~> 4.2'
 gem 'middleman-blog'
+gem 'middleman-syntax'
+
 gem 'middleman-livereload'
 gem 'middleman-autoprefixer', '~> 2.7'
 
