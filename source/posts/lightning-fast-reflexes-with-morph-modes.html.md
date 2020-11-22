@@ -33,6 +33,7 @@ which is not horrible, but definitely not great.
 To delete an item in the timeline we can have a simple reflex:
 
 `timeline_reflex.rb`
+
 ```ruby
 def delete
   ScheduledOrder.destroy(element.dataset[:scheduled-order-id])
