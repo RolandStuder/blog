@@ -1,6 +1,0 @@
-+++
-headless = true
-siteHeader = ""
-siteFooter = ""
-+++
-
