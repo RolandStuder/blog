@@ -6,27 +6,38 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title>Rolis Blog<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "site" %>
+
     <style type="text/css">
       <%= Rouge::Themes::Github.render(:scope => '.highlight') %>     
     </style>
   </head>
   <body>
-    <div id="main" role="main">
-      <h1 class="main-title"><%= current_page.data.title %></h1>
+    <header>
+     <span class="left">Roland Studer</span>
+      <img src="/images/avatar.png" class="avatar">
       <% if current_page.data.date %>
-        <small class="date">
-          Roland Studer, <%= Date.parse(current_page.data.date).strftime('%e. %_m. %Y') %>
-        </small>
+        <span class="date">
+            <%= Date.parse(current_page.data.date.to_s).strftime('%e. %_m. %Y') %>
+        </span>
+      <% else %>
+        <span class="date">
+          UX Guy gone DEV
+        </span>
       <% end %>
+    </header><!-- /header -->
+    <div id="main" role="main">
+
+
+      <h1 class="main-title"><%= current_page.data.title %></h1>
       <%= yield %>
     </div>
     <hr>
     <footer>
-      <a href="/" title="">Alle Blogposts</a> 
-      von Roland Studer
+      <a href="/" title="">All Blogposts</a> 
+      from Roland Studer
       <a href="mailto:roli@hey.com">roli@hey.com</a> | 
       <a href="https://www.twitter.com/rolandstuder" title="">Twitter</a> |
       <a href="https://www.github.com/rolandstuder" title="">Github</a>
