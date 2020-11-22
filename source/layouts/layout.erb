@@ -14,9 +14,22 @@
     </style>
   </head>
   <body>
-
     <div id="main" role="main">
+      <h1 class="main-title"><%= current_page.data.title %></h1>
+      <% if current_page.data.date %>
+        <small class="date">
+          Roland Studer, <%= Date.parse(current_page.data.date).strftime('%e. %_m. %Y') %>
+        </small>
+      <% end %>
       <%= yield %>
     </div>
+    <hr>
+    <footer>
+      <a href="/" title="">Alle Blogposts</a> 
+      von Roland Studer
+      <a href="mailto:roli@hey.com">roli@hey.com</a> | 
+      <a href="https://www.twitter.com/rolandstuder" title="">Twitter</a> |
+      <a href="https://www.github.com/rolandstuder" title="">Github</a>
+    </footer>
   </body>
 </html>
