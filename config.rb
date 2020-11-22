@@ -4,6 +4,7 @@
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+activate :directory_indexes
 
 activate :livereload
 # activate :vegas
@@ -47,7 +48,7 @@ activate :blog do |blog|
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
-  blog.permalink = "{title}"
+  blog.permalink = "{title}.html"
   # blog.tag_template = "tag.html"
   # blog.calendar_template = "calendar.html"
 
