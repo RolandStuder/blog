@@ -15,11 +15,7 @@
     </style>
   </head>
   <body>
-    <header>
-      <img src="/images/avatar.png" class="avatar">
-      <div class="name">Roland Studer</div>
-    </header><!-- /header -->
-    <div id="main" role="main">
+    <main id="main" role="main">
       <% if current_page.data.date %>
         <div class="date">
             <%= Date.parse(current_page.data.date.to_s).strftime('%e. %_m. %Y') %>
@@ -27,11 +23,16 @@
       <% end %>
       <h1 class="main-title"><%= current_page.data.title %></h1>
       <%= yield %>
-    </div>
-    <hr>
+    </main>
+    <header>
+      <a href="/" title="">
+        <img src="/images/avatar.png" class="avatar">
+        <div class="name">Roland Studer</div>
+      </a>  
+    </header><!-- /header -->
+
     <footer>
-      <a href="/" title="">All Blogposts</a> 
-      from Roland Studer
+      <a href="/" title="">All Blogposts</a> |
       <a href="mailto:roli@hey.com">roli@hey.com</a> | 
       <a href="https://www.twitter.com/rolandstuder" title="">Twitter</a> |
       <a href="https://www.github.com/rolandstuder" title="">Github</a>

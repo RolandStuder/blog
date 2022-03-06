@@ -31,6 +31,9 @@ footer {
 header {
   text-align: center;
   color: #666;
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
 }
 
 header a {
@@ -43,10 +46,9 @@ header .name {
   letter-spacing: 0.1rem;
 }
 
-
 footer {
-  margin-top:  4rem;
   margin-bottom:  4rem;
+  padding: 0;
 }
 
 img {
@@ -70,4 +72,8 @@ hr {
   color:  #666;
   font-size:  0.9rem;
   margin-bottom:  0.3rem;
+}
+
+a {
+  font-weight: normal;
 }
