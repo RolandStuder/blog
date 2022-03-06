@@ -16,21 +16,15 @@
   </head>
   <body>
     <header>
-     <span class="left">Roland Studer</span>
       <img src="/images/avatar.png" class="avatar">
-      <% if current_page.data.date %>
-        <span class="date">
-            <%= Date.parse(current_page.data.date.to_s).strftime('%e. %_m. %Y') %>
-        </span>
-      <% else %>
-        <span class="date">
-          UX Guy gone DEV
-        </span>
-      <% end %>
+      <div class="name">Roland Studer</div>
     </header><!-- /header -->
     <div id="main" role="main">
-
-
+      <% if current_page.data.date %>
+        <div class="date">
+            <%= Date.parse(current_page.data.date.to_s).strftime('%e. %_m. %Y') %>
+        </div>
+      <% end %>
       <h1 class="main-title"><%= current_page.data.title %></h1>
       <%= yield %>
     </div>

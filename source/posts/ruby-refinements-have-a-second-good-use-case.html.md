@@ -49,7 +49,7 @@ class Logger
 end
 ```
 
-# A complication
+## A complication
 
 Procs are a convenient solution, however they get the binding/context of where they are defined, not of where they are called. Just calling the proc in our `Logger`class will not make use of the `colorize`-refinement, actually no method of the `Logger`class is available to the proc, because it was defined in a completely different context (in an initializer of the gem user).
 

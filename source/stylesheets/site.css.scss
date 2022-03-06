@@ -1,9 +1,10 @@
 @import 'mvp.css.scss';
 
 body {
-  max-width: 40rem;
+  max-width: 45rem;
   margin: auto;
   padding: 1rem;
+  font-size: 18px;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
@@ -12,13 +13,15 @@ body {
 
 
 h1 {
+  font-size:  2.5rem;
   line-height: 100%;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
-.date {
-  display: block;
-  text-align: left;
+h2 {
+  margin-top: 3rem;
 }
 
 footer {
@@ -26,13 +29,8 @@ footer {
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #666;
-  text-transform: uppercase;
-  margin-bottom: -2.5rem;
 }
 
 header a {
@@ -40,17 +38,15 @@ header a {
   text-decoration: none;
 }
 
-header > * {
-  width: 50%;
-  background-color: white;
+header .name {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
-header .left {
-  text-align: right;
-}
 
-head .right {
-
+footer {
+  margin-top:  4rem;
+  margin-bottom:  4rem;
 }
 
 img {
@@ -59,11 +55,19 @@ img {
 
 img.avatar {
   border-radius: 100%;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   margin: 0 0.5rem;
 }
 
 hr {
   margin: 1rem;
+}
+
+.date {
+  text-align: center;
+  margin-top:  3rem;
+  color:  #666;
+  font-size:  0.9rem;
+  margin-bottom:  0.3rem;
 }
