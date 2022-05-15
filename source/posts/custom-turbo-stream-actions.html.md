@@ -47,13 +47,13 @@ So the following html added anywhere in the body would perform a redirect:
 
 So with a turbo stream we can attach this to the body:
 
-```html
+```erb
   <%= turbo_stream.append_all "body" do %>
   	<template data-controller="redirect" data-redirect-url-value="<%= your_redirect_url %>"></template>
   <% end %>
 ```
 
-And the browser will redirect, given this turbo stream response. BTW: We use `append_al`l
+And the browser will redirect, given this turbo stream response. BTW: We use `append_all` so we can append to the body, withouth having to rely on the presence of an element with a certain id.
 
 ## Better developer experience
 
