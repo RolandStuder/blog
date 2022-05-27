@@ -70,7 +70,7 @@ convert a hash of values to values for a stimulus controller:
 ```ruby
 module TurboStreamActionHelper
   def turbo_stream_action(action, **values)
-    controller_name = "actions--" + action.to_s.dasherize
+    controller_name = action.to_s.dasherize
 
     attributes = { "data-controller" => controller_name }
 
@@ -80,7 +80,7 @@ module TurboStreamActionHelper
     end
 
     turbo_stream.append_all "body" do
-      content_tag(:template, nil, attributes)
+      content_tag(:template, nil, data_attrs.merge)
     end
   end
 end
