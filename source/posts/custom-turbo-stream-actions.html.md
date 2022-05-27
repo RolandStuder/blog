@@ -68,20 +68,19 @@ So we can write a helper that creates a turbo stream tag that will append to the
 convert a hash of values to values for a stimulus controller:
 
 ```ruby
-module TurboStreamHelper
+module TurboStreamActionHelper
   def turbo_stream_action(action, **values)
-    controller_name = action.to_s.dasherize
+    controller_name = "actions--" + action.to_s.dasherize
 
-    data_attrs = {
-      "data-controller" => controller_name
-    }
+    attributes = { "data-controller" => controller_name }
 
-    data_attrs = values.each_with_object(data_attrs) do |(key, value), attrs|
-      attrs["data-#{controller_name}-#{key.to_s.dasherize}-value"] = value
+    values.each do |key, value|
+      key_name = key.to_s.dasherize
+      attributes["data-#{controller_name}-#{key_name}-value"] = value
     end
 
     turbo_stream.append_all "body" do
-      content_tag(:template, nil, data_attrs.merge)
+      content_tag(:template, nil, attributes)
     end
   end
 end
@@ -96,3 +95,7 @@ Turbo streams with Stimulus Controllers give us enough power to achieve custom a
 use CableReady anyway, then have a look at 
 [this package from the wonderful Marco Roth](https://github.com/marcoroth/cable-streams) 
 that enables you to use the cable ready operations with turbo streams. 
+
+--
+
+edit: Made helper a bit more readable, thx to [Dorian](https://twitter.com/dorianmariefr) for the suggestions
