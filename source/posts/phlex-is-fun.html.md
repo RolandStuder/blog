@@ -81,6 +81,8 @@ The `template` method clearly displays the view logic, while the appropriate ins
 
 We have the freedom to choose the most suitable level of abstraction and refactor as we see fit. We have the elegance of Ruby at our disposal.
 
-II am genuinely enthusiastic about Phlex. It has completely transformed how I approach views, paving the way for elegant abstractions [this one for forms](https://fly.io/ruby-dispatch/component-driven-development-on-rails-with-phlex/#a-form-component-that-automatically-permits-strong-parameters).
+I am genuinely enthusiastic about Phlex. It has completely transformed how I approach views, paving the way for elegant abstractions [this one for forms](https://fly.io/ruby-dispatch/component-driven-development-on-rails-with-phlex/#a-form-component-that-automatically-permits-strong-parameters).
 
 Working with your views as enjoyable as writing other ruby code.
+
+
