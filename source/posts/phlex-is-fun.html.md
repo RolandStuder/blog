@@ -75,7 +75,7 @@ class Searches::Show < Phlex::HTML
 end
 ```
 
-The `template` method clearly displays the view logic, while the appropriate instance methods provide the HTML. For me, Phlex isn't realy about the HTML; in a way it is about everything else.
+The `template` method clearly displays the actual view logic of the full template. The appropriate instance methods provide the HTML. For me, Phlex isn't really about the HTML; in a way it is about everything else.
 
 **We can write ruby and Phlex provides us the html tag methods we need.**
 
