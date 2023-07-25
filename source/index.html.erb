@@ -14,7 +14,7 @@ index: true
 <% end %>
 <ul>
   <% blog.articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%e. %m. %Y') %></span></li>
+    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%e. %-m. %Y') %></span></li>
   <% end %>
 </ul>
 <% if paginate %>
