@@ -1,6 +1,6 @@
 ---
 title: 'More expressive APIs with View Components'
-date: '2023-07-26'
+date: '2023-07-25'
 tags: [view-components, phlex, ruby, rails]
 draft: false
 chat-gpt: revision
