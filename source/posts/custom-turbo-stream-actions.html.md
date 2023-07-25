@@ -4,6 +4,10 @@ date: '2022-05-15'
 language: en
 ---
 
+**Update**: There is now a [built in way to create custom turbo stream actions](https://marcoroth.dev/posts/guide-to-custom-turbo-stream-actions).
+
+---
+
 Turbo Hotwire is neat, I really like the simplicity of Turbo frames. But after having used [CableReady](http://cableready.stimulusreflex.com) the turbo streams feel a bit limiting. I was surprised, when I could not find any gem/package that enhances turbo streams to create custom turbo actions.
 
 Let's say if you want to redirect to a new page after some job is done, 
