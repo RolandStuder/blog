@@ -23,6 +23,11 @@
       <% end %>
       <h1 class="main-title"><%= current_page.data.title %></h1>
       <%= yield %>
+      <% if current_page.data.chat_gpt == "revision" %>
+        <p><small>
+          This post was written entirely by Roland Studer, but revised with the help of chat gpt.
+        </small></p>
+      <% end %>
     </main>
     <header>
       <a href="/" title="">

@@ -1,12 +1,12 @@
 ---
 title: 'Supercharged table component built with ViewComponent'
-date: '2023-07-29'
+date: '2023-08-02'
 tags: [view-components, phlex, ruby, rails]
-draft: true
-chat-gpt: none
+chat_gpt: revision
 ---
 
-When searching for examples for table components built with the view component gems, I was surprised to come up empty. Some asking around showed me examples that worked like this:
+When searching for examples of table components built with the ViewComponent gems, I was surprised to find none. After some inquiries, I came across examples that worked like this:
+
 
 ```erb
 <%= render Table.new do |table| %>
@@ -21,7 +21,7 @@ When searching for examples for table components built with the view component g
 <% end %>
 ```
 
-This is pragmatic, but when it comes to tables I like to think of it in terms of columns. So let us try to supercharge our table component and to enable something like this:
+This approach is pragmatic, but personally, I prefer to think of tables in terms of columns. So, let's supercharge our table component to enable something like this:
 
 ```erb
 <%= render TableComponent.new(data: @products) do |table| %>
@@ -30,9 +30,9 @@ This is pragmatic, but when it comes to tables I like to think of it in terms of
 <% end %>
 ```
 
-### The table component
+### Introducing the table component
 
-So here we go:
+Let's dive into the implementation:
 
 ```ruby
 class TableComponent < ViewComponent::Base
@@ -48,7 +48,7 @@ class TableComponent < ViewComponent::Base
 
   private
 
-  # without calling content, the view component will never call the block, so @column remains emtpy
+  # By calling content, we ensure that the view component calls the block, and @columns get populated
   def before_render
     content 
   end
@@ -58,13 +58,14 @@ class TableComponent < ViewComponent::Base
 
     def initialize(label, &block)
       @label = label
-      @td_block = td_block
+      @td_block = block
     end
   end
 end  
 ```
 
-The erb file for it, to keep things simple we ommit `thead`, `tbody` or any styling or additional classes:
+The corresponding erb file keeps things simple, omitting thead, tbody, or any styling:
+
 
 ```erb
 <table>
@@ -84,11 +85,10 @@ The erb file for it, to keep things simple we ommit `thead`, `tbody` or any styl
 </table>
 ```
 
-You may notice three peculiarities here, that I should explain:
+You may notice three peculiarities here that require explanation:
 
 ### Why not use slots?
-
-The main challenge is that the the view components gem is that there is no official way to render a table cell multiple times but with different data every time. Meaning you can't pass that while rendering a slot like this:
+The main challenge is that the ViewComponent gem does not have an official way to render a table cell multiple times with different data each time. Meaning you can't pass that while rendering a slot like this:
 
 ```erb
 <%= @rows.each do |row| %>
@@ -96,9 +96,9 @@ The main challenge is that the the view components gem is that there is no offic
 <% end %>
 ```
 
-There is just no way to pass arbitrary data from the component (in our example the rows of the table) to a slot while you are rendering it, on top of that whatever a component renders as `content` is cached in an instance variable. So we will do it without using slots, and instead handle column definitions ourselves.
+There is no way to pass arbitrary data from the component (in our example, the rows of the table) to a slot block while rendering it. Therefore, we handle column definitions ourselves instead of using slots.
 
-### Using `before_render` to make sure the block is called
+### Using `before_render` to ensure the block is called
 
 When you use the `TableComponent` like this, and don't call `content` at some point.
 
@@ -108,7 +108,7 @@ When you use the `TableComponent` like this, and don't call `content` at some po
 <% end %>
 ```
 
-Then the view component gem never actually calls the block, so the `column` method calls never happen. We use the `before_render` lifecycle method to do that.
+The ViewComponent gem won't actually call the block, and the column method calls won't happen. We use the `before_render` lifecycle method to ensure the block is called.
 
 ### What is this `view_context.capture(row, &column.td_block)` doing?
 
@@ -123,11 +123,13 @@ If in erb you define a column like this:
 <% end %>
 ```
 
-What the block actually returns, is only the last string, which is `</div>`, if in our component template we would only do `column.td_block.call(row)` it would only capture this last `</div>`, therefore we need to capture the block in the `view_context`, and whatever we pass to `view_context_capture` as arguments will be passed into the block.
+The block will actually return only the last string, which is `</div>`. To capture the entire block's HTML content, we use `view_context.capture(row, &column.td_block)`. This way, we ensure that all the HTML from the block is included.
 
-So there you have it, an easy to use but very flexible table component.
 
-But this is just the beginning, one can create create more methods to handle special requirements and create title columns, image columns, columns with action links. 
+So there you have it, an easy-to-use but highly flexible table component.
+
+
+But this is just the beginning. You will be able to create more methods to handle special requirements and create title columns, image columns, and columns with action links.
 
 ```erb
 <%= render TableComponent.new(data: @products) do |table| %>
@@ -138,4 +140,4 @@ But this is just the beginning, one can create create more methods to handle spe
 <% end %>
 ```
 
-You have the beginning of an abstraction here, that can be nicely extended. Stay tuned for more!
+You have the beginning of an abstraction here, that can be further extended. Stay tuned for more!

@@ -3,7 +3,7 @@ title: 'More expressive APIs with View Components'
 date: '2023-07-25'
 tags: [view-components, phlex, ruby, rails]
 draft: false
-chat-gpt: revision
+chat_gpt: revision
 ---
 
 [View components](https://viewcomponent.org) offer two primary ways to interact with the component: passing arguments to the initializer and using slots:
