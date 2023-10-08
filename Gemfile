@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
 # Middleman Gems
-gem 'middleman', '~> 4.2'
+gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-syntax'
+gem 'haml', '5.2.2'
 
 gem 'middleman-livereload'
 gem 'middleman-autoprefixer', '~> 2.7'
