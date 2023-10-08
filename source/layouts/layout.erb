@@ -8,10 +8,10 @@
 
     <title>Rolis Blog<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-    <%= stylesheet_link_tag "site" %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/site.css"  %>
 
     <style type="text/css">
-      <%= Rouge::Themes::Github.render(:scope => '.highlight') %>     
+      <%= Rouge::Themes::Github.render(:scope => '.highlight') %>
     </style>
   </head>
   <body>
@@ -33,12 +33,12 @@
       <a href="/" title="">
         <img src="/images/avatar.png" class="avatar">
         <div class="name">Roland Studer</div>
-      </a>  
+      </a>
     </header><!-- /header -->
 
     <footer>
       <a href="/" title="">All Blogposts</a> |
-      <a href="mailto:roli@hey.com">roli@hey.com</a> | 
+      <a href="mailto:roli@hey.com">roli@hey.com</a> |
       <a href="https://ruby.social/@roli" title="">Mastodon</a> |
       <a href="https://www.github.com/rolandstuder" title="">Github</a>
     </footer>
