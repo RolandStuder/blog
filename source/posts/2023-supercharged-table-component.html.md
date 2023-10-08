@@ -5,7 +5,7 @@ tags: [view-components, phlex, ruby, rails]
 chat_gpt: revision
 ---
 
-When searching for examples of table components built with the ViewComponent gems, I was surprised to find none. After some inquiries, I came across examples that worked like this:
+When searching for examples of table components built with the [ViewComponent gem](https://github.com/viewComponent/view_component/), I was surprised to find none. After some inquiries, I came across examples that worked like this:
 
 
 ```erb
@@ -88,7 +88,7 @@ The corresponding erb file keeps things simple, omitting thead, tbody, or any st
 You may notice three peculiarities here that require explanation:
 
 ### Why not use slots?
-The main challenge is that the ViewComponent gem does not have an official way to render a table cell multiple times with different data each time. Meaning you can't pass that while rendering a slot like this:
+The main challenge is that the ViewComponent gem does not have an official way to render a table cell multiple times with different data each time. Meaning [you can't pass that while rendering a slot](https://github.com/ViewComponent/view_component/issues/1810) like this:
 
 ```erb
 <%= @rows.each do |row| %>
