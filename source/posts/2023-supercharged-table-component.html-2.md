@@ -2,7 +2,7 @@
 title: 'Supercharged table component built with ViewComponent'
 date: '2023-07-29'
 tags: [view-components, phlex, ruby, rails]
-draft: true
+published: false
 ---
 
 ```erb

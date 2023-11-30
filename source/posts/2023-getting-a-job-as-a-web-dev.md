@@ -1,7 +1,7 @@
 ---
 title: It's easy. It's impossible. Your way to get a job as a self taught web developer
 date: '2022-07-26'
-draft: true
+published: false
 tags: []
 ---
 
