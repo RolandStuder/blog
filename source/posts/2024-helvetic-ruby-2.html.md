@@ -1,6 +1,6 @@
 ---
-title: "Helvetic Ruby Second Edition"
-date: 2025-05-23
+title: "Helvetic Ruby - Second Edition"
+date: 2024-05-23
 tags: [switzerland, conference, ruby, rails]
 published: true
 chat_gpt: none

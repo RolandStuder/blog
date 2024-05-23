@@ -61,7 +61,7 @@ header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
-    padding: 2rem 1rem;
+    padding: 0 1rem;
 }
 
 hr {
@@ -215,11 +215,11 @@ p {
     padding: 0;
 }
 
-// pre {
-   //     margin: 1rem 0;
-   //     max-width: var(--width-card-wide);
-   //     padding: 1rem 0;
-   // }
+pre {
+    margin: 1rem 0;
+    max-width: var(--width-card-wide);
+    padding: 1rem 0;
+}
 
 pre code,
 pre samp {
@@ -561,4 +561,8 @@ ul {
 ol li,
 ul li {
     padding: 0rem 0;
+}
+
+ul.article-list {
+    list-style-type: none;
 }
