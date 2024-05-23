@@ -6,7 +6,7 @@ published: true
 chat_gpt: none
 ---
 
-What a wonderful conference! I participated the first instance of [Helvetic Ruby](https://helvetic-ruby.ch) in my home city of Bern.
+What a wonderful conference! I participated the first instance of [Helvetic Ruby](https://helvetic-ruby.ch/2023) in my home city of Bern.
 
 
 ## Good mix of talks: Starting on the topic of performance and ending with an actual performance
