@@ -5,6 +5,7 @@ gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-syntax'
 gem 'haml', '5.2.2'
+gem 'concurrent-ruby', '1.3.4'
 
 gem 'middleman-livereload'
 gem 'middleman-autoprefixer', '~> 2.7'
