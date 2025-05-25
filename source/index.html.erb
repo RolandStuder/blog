@@ -28,6 +28,9 @@ index: true
       <time datetime="<%= article.date.strftime('%Y-%m-%d') %>">
         <%= article.date.strftime('%B, %e, %Y') %>
       </time>
+    <% if article.data.published == false %>
+      <sup>Unpublished</sup>
+    <% end %>
     </li>
   <% end %>
   </ul>
