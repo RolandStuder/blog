@@ -17,3 +17,6 @@
 /.idea
 
 .DS_Store
+
+# Claude Code directory
+.claude/
