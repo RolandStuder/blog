@@ -4,7 +4,7 @@ location: "C. Madre María de la Purísima, 9, Casco Antiguo, 41003 Sevilla, Spa
 usual_schedule: "Friday 7:30 PM"
 genres: ["jazz", "bebop", "manouche", "new-orleans-trad"]
 contact: "C. Madre María de la Purísima, 9, Casco Antiguo, 41003 Sevilla"
-website: "https://gallorojo.es/agenda/agenda-todas/"
+website: "https://gallorojo.es/"
 available_equipment: []
 tags: ["weekly", "bad-jam", "intimate", "bohemian"]
 confidence: "high"

@@ -3,8 +3,8 @@ title: "Tokatu Music Club Jam Sessions"
 location: "Ctra la isla, km 0.1 pol fuente del rey, nave I, Dos Hermanas, Spain"
 usual_schedule: "Regular jam sessions (?)"
 genres: ["all-styles", "various"]
-contact: "http://www.tokatu.com/"
-website: "http://www.tokatu.com/"
+contact: "tokatumusic@yahoo.es"
+website: "https://cys-tokatumusic.com/"
 available_equipment: ["drums (?)", "professional-sound-system", "stage"]
 tags: ["rehearsal-rooms", "concert-hall", "recording-studio", "comprehensive"]
 confidence: "medium"

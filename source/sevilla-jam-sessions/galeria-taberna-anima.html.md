@@ -3,8 +3,8 @@ title: "Galería Taberna Ánima Flamenco Jams"
 location: "Near Alameda de Hércules, Sevilla"
 usual_schedule: "Wednesday & Friday flamenco jams, Thursday & Sunday concerts"
 genres: ["flamenco", "jazz", "rock"]
-contact: "Near Alameda de Hércules"
-website: ""
+contact: "C/ Miguel Cid, 80, Sevilla - 954386708"
+website: "https://animataberna.wordpress.com/"
 available_equipment: []
 tags: ["flamenco", "bi-weekly", "long-established", "local-talent", "mixed-programming"]
 confidence: "high"

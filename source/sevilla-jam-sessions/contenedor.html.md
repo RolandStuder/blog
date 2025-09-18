@@ -3,8 +3,8 @@ title: "ConTenedor Tuesday Jazz"
 location: "Calle San Luis, Sevilla"
 usual_schedule: "Tuesday 8:00 PM"
 genres: ["jazz"]
-contact: "Calle San Luis, Sevilla"
-website: ""
+contact: "954 916 333, info@restaurantecontenedor.com"
+website: "https://restaurantecontenedor.com/"
 available_equipment: []
 tags: ["weekly", "restaurant", "tuesday-jazz", "live-performance"]
 confidence: "high"
