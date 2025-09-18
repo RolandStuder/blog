@@ -186,7 +186,7 @@ layout: layout
       </dl>
 
       <div class="venue-content">
-        <%= markdown(venue[:content]) %>
+        <%= simple_format(venue[:content]) %>
       </div>
 
       <% if venue[:sources].any? %>
