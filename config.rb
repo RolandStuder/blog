@@ -22,6 +22,9 @@ page '/*.txt', layout: false
 
 Time.zone = "Bern"
 
+# Ignore jam session venue files to prevent automatic page creation
+ignore 'sevilla-jam-sessions/*'
+
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
