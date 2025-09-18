@@ -11,8 +11,6 @@ confidence: "medium"
 sources: ["https://elbarmutante.com/en/", "https://es.thebar.com/locales/discotecas-clubs/sevilla/bar-mutante", "https://www.instagram.com/mutante_sevilla/", "https://3si.es/live-music-in-sevilla/"]
 ---
 
-# El Mutante (Bar Mutante) Open Mic & Jams
-
 **Confidence Level:** Medium - venue confirmed, but specific jam schedule unclear
 
 El Mutante is a musical bar with a retro-futuristic spirit located in the Old Town. It offers live concerts, jam sessions, and themed parties each night (?).

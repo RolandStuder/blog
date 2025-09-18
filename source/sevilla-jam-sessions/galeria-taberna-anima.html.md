@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://3si.es/live-music-in-sevilla/", "https://oasisbackpackershostels.com/best-live-music-clubs-and-venues-in-seville-spain/", "https://south.tours/magazine/live-music-in-seville-top-15-unmissable-places/"]
 ---
 
-# Galería Taberna Ánima Flamenco Jams
-
 **Confidence Level:** High - multiple sources confirm this long-established venue
 
 Galería Taberna Ánima (also known as Anima Galería Taberna) is a long-standing establishment in Sevilla that has been supporting local musical talent for almost 40 years.

@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://casadelbluesdesevilla.com/", "https://www.instagram.com/casadelbluesdesevilla/", "https://yuzin.com/jam-session-casa-del-blues/", "https://socios.assejazz.com/en/event/jam-casa-del-blues-1300-15/", "https://www.yelp.com/biz/casa-del-blues-de-sevilla-sevilla"]
 ---
 
-# Casa del Blues de Sevilla Jam Sessions
-
 **Confidence Level:** High - multiple sources confirm this blues organization and their activities
 
 Casa del Blues de Sevilla is a blues association that serves as "a fantastic venue for blues music, as well as a meeting point for blues lovers." The organization has been organizing concerts, jams and events, making the area a reference point for blues lovers.

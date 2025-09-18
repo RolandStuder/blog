@@ -11,8 +11,6 @@ confidence: "medium"
 sources: ["https://salaeven.com/", "https://www.songkick.com/venues/3559379-sala-even", "https://3si.es/live-music-in-sevilla/", "jam-source.md"]
 ---
 
-# Sala EVEN Jam Sessions
-
 **Confidence Level:** Medium - information from local chat and venue research, but schedule is newly starting
 
 Sala EVEN is starting jam sessions as mentioned in local musician chat from September 2025. The venue mentioned they were having their "second session" on September 18, 2024 (?), indicating this is a new and developing jam series.

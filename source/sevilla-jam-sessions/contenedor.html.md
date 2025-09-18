@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://shawnhennessey.substack.com/p/sevilla-jazz", "https://3si.es/live-music-in-sevilla/"]
 ---
 
-# ConTenedor Tuesday Jazz
-
 **Confidence Level:** High - consistently mentioned in jazz guides
 
 ConTenedor is a great restaurant on Calle San Luis which has live jazz every Tuesday night at 8:00 PM.

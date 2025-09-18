@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://shawnhennessey.substack.com/p/sevilla-jazz", "https://gastroranking.es/r/abaceria-casa-gutierrez_288524/", "https://restaurantguru.com/Abaceria-Casa-Gutierrez-Seville", "https://welovetapas.com/2015/07/01/sevilla-abacerias/"]
 ---
 
-# Abaceria Casa Gutierrez Bi-weekly Jazz Jam
-
 **Confidence Level:** High - specifically mentioned in jazz guides
 
 Abaceria Casa Gutierrez, a small tapas venue located toward the rear of the Feria Market, is the scene of a "fantastic bi-weekly jazz jam" every other Tuesday night at 9:00 PM.

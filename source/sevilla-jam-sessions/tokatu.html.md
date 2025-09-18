@@ -11,8 +11,6 @@ confidence: "medium"
 sources: ["http://www.tokatu.com/", "https://alquilarlocalsevilla.com/", "https://www.facebook.com/Tokatu.Music.Club/", "https://3si.es/live-music-in-sevilla/", "jam-source.md"]
 ---
 
-# Tokatu Music Club Jam Sessions
-
 **Confidence Level:** Medium - venue confirmed as comprehensive music facility, but specific jam schedule unclear
 
 Tokatu Music Club is described as "born by and for music," forming a club where music is the unifying bond. At their club, you can rehearse, learn music, record albums, give concerts, and participate in jam sessions.

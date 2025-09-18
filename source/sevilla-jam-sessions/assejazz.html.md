@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://assejazz.com/en/", "https://socios.assejazz.com/en/", "https://assejazz.com/event/1088/2022-05-15/", "https://3si.es/live-music-in-sevilla/"]
 ---
 
-# ASSEJAZZ Jam Sessions
-
 **Confidence Level:** High - multiple sources confirm this information
 
 ASSEJAZZ (Asociación Sevillana de Jazz) runs weekly jam sessions every Sunday at 1:00 PM at Platea-Odeon-La Imperdible in the old Plaza de Armas train station. These are described as "very open informal spaces" where vocalists and instrumentalists share music interpreting jazz standards and jazz songs.

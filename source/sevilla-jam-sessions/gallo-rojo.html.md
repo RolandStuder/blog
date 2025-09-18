@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://gallorojo.es/agenda/agenda-todas/", "https://3si.es/live-music-in-sevilla/", "https://onsevilla.com/programacion-gallo-rojo-sevilla", "https://shawnhennessey.substack.com/p/sevilla-jazz"]
 ---
 
-# Gallo Rojo - Bad Jam Session
-
 **Confidence Level:** High - multiple sources and official website confirm
 
 Gallo Rojo hosts "Bad Jam" sessions every Friday at 7:30 PM. The venue features several floor-to-ceiling windows overlooking the barrio near the Setas and has live music 6 days a week (Thursday is normally for swing dancers with pre-recorded music).

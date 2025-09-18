@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://theculturetrip.com/europe/spain/articles/the-best-bars-in-central-seville-for-live-music", "https://theeuropeanbarguide.com/bicicleteria-seville/", "https://shawnhennessey.substack.com/p/sevilla-jazz", "https://3si.es/live-music-in-sevilla/"]
 ---
 
-# La Bicicleteria Jam Sessions
-
 **Confidence Level:** High - multiple sources confirm this underground venue
 
 La Bicicleteria is described as "a legend on Seville's underground scene," situated on Calle Feria, "arguably the city's scruffiest, most bohemian street."

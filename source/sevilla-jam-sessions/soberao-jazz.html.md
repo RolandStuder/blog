@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://www.turismosevilla.org/es/eventos-y-fiestas/xviii-festival-soberao-jazz-de-dos-hermanas-2024", "https://wanderlog.com/place/details/338372/pub-soberao-jazz", "https://twitter.com/clubsoberaojazz", "https://www.facebook.com/SoberaoJazzFest/", "https://www.tripadvisor.es/Attraction_Review-g659305-d7797393-Reviews-Soberao_Jazz-Dos_Hermanas_Province_of_Seville_Andalucia.html"]
 ---
 
-# Soberao Jazz Club Jam Sessions
-
 **Confidence Level:** High - well-established venue with extensive documentation
 
 Soberao Jazz Club is described as "the oldest club in Sevilla that is still active today" and has been "a bastion of jazz in Sevilla, Andalusia and Spain" since opening in 1979.

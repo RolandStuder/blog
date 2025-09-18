@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://www.facebook.com/salaelcachorro/", "https://www.tripadvisor.com/Attraction_Review-g187443-d4273117-Reviews-Sala_El_Cachorro-Seville_Province_of_Seville_Andalucia.html", "https://shawnhennessey.substack.com/p/sevilla-jazz", "https://www.escenaensevilla.es/locales-teatro/sala-el-cachorro"]
 ---
 
-# Sala El Cachorro Saturday Jazz Sessions
-
 **Confidence Level:** High - multiple sources confirm Saturday afternoon jazz sessions
 
 Sala El Cachorro in the Triana neighborhood hosts weekly Saturday afternoon jazz sessions.

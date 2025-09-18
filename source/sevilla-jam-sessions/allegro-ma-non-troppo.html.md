@@ -11,8 +11,6 @@ confidence: "high"
 sources: ["https://www.facebook.com/allegromanontropp/", "https://www.instagram.com/allegrosevilla/", "https://3si.es/live-music-in-sevilla/", "https://shawnhennessey.substack.com/p/sevilla-jazz"]
 ---
 
-# Allegro Ma Non Troppo Sunday Jam
-
 **Confidence Level:** High - multiple sources confirm weekly Sunday Mediterranean jam
 
 Located across from the Hotel Gil in the Macarena neighborhood, Allegro is a small, beautiful cavern-like space that is noted for its weekly Sunday night Mediterranean jam session.
