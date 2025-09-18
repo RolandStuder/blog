@@ -7,7 +7,7 @@ contact: "Instagram @casadelbluesdesevilla"
 website: "https://casadelbluesdesevilla.com/"
 available_equipment: []
 tags: ["monthly", "blues-association", "bbq-terrace", "community", "workshops"]
-confidence: "high"
+confidence: "low"
 sources: ["https://casadelbluesdesevilla.com/", "https://www.instagram.com/casadelbluesdesevilla/", "https://yuzin.com/jam-session-casa-del-blues/", "https://socios.assejazz.com/en/event/jam-casa-del-blues-1300-15/", "https://www.yelp.com/biz/casa-del-blues-de-sevilla-sevilla"]
 ---
 

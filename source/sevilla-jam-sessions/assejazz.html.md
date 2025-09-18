@@ -7,7 +7,7 @@ contact: "C. Escarpia, 2, Norte, 41008 Sevilla, Spain"
 website: "https://assejazz.com/en/"
 available_equipment: []
 tags: ["weekly", "free-entry", "open-format", "jazz-association"]
-confidence: "high"
+confidence: "low"
 sources: ["https://assejazz.com/en/", "https://socios.assejazz.com/en/", "https://assejazz.com/event/1088/2022-05-15/", "https://3si.es/live-music-in-sevilla/"]
 ---
 

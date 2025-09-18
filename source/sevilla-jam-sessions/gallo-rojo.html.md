@@ -7,7 +7,7 @@ contact: "C. Madre María de la Purísima, 9, Casco Antiguo, 41003 Sevilla"
 website: "https://gallorojo.es/"
 available_equipment: []
 tags: ["weekly", "bad-jam", "intimate", "bohemian"]
-confidence: "high"
+confidence: "low"
 sources: ["https://gallorojo.es/agenda/agenda-todas/", "https://3si.es/live-music-in-sevilla/", "https://onsevilla.com/programacion-gallo-rojo-sevilla", "https://shawnhennessey.substack.com/p/sevilla-jazz"]
 ---
 

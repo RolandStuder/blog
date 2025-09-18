@@ -7,7 +7,7 @@ contact: "tokatumusic@yahoo.es"
 website: "https://cys-tokatumusic.com/"
 available_equipment: ["drums (?)", "professional-sound-system", "stage"]
 tags: ["rehearsal-rooms", "concert-hall", "recording-studio", "comprehensive"]
-confidence: "medium"
+confidence: "low"
 sources: ["http://www.tokatu.com/", "https://alquilarlocalsevilla.com/", "https://www.facebook.com/Tokatu.Music.Club/", "https://3si.es/live-music-in-sevilla/", "jam-source.md"]
 ---
 

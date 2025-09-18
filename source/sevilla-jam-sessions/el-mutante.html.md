@@ -7,7 +7,7 @@ contact: "C/ Fresa 15, Casco Antiguo, Sevilla"
 website: "https://elbarmutante.com/en/"
 available_equipment: []
 tags: ["open-mic", "underground", "retro-futuristic", "drag-nights"]
-confidence: "medium"
+confidence: "low"
 sources: ["https://elbarmutante.com/en/", "https://es.thebar.com/locales/discotecas-clubs/sevilla/bar-mutante", "https://www.instagram.com/mutante_sevilla/", "https://3si.es/live-music-in-sevilla/"]
 ---
 

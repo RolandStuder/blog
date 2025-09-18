@@ -7,7 +7,7 @@ contact: "Calle Amargura, Sevilla"
 website: "https://restaurantguru.com/Abaceria-Casa-Gutierrez-Seville"
 available_equipment: []
 tags: ["bi-weekly", "tapas-venue", "feria-market", "traditional", "authentic"]
-confidence: "high"
+confidence: "low"
 sources: ["https://shawnhennessey.substack.com/p/sevilla-jazz", "https://gastroranking.es/r/abaceria-casa-gutierrez_288524/", "https://restaurantguru.com/Abaceria-Casa-Gutierrez-Seville", "https://welovetapas.com/2015/07/01/sevilla-abacerias/"]
 ---
 

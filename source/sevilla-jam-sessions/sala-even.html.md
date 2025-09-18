@@ -7,7 +7,7 @@ contact: "Instagram @adriansfdez"
 website: "https://salaeven.com/"
 available_equipment: []
 tags: ["new-series", "advance-notice", "song-list", "multi-genre"]
-confidence: "medium"
+confidence: "low"
 sources: ["https://salaeven.com/", "https://www.songkick.com/venues/3559379-sala-even", "https://3si.es/live-music-in-sevilla/", "jam-source.md"]
 ---
 

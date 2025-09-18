@@ -7,7 +7,7 @@ contact: "C. la Francesa, 34, 41701 Dos Hermanas"
 website: "https://www.facebook.com/SoberaoJazzFest/"
 available_equipment: ["double-bass", "drums", "keyboard", "stage"]
 tags: ["historic", "established-1979", "festival-organizer", "multiple-areas", "resident-quartet"]
-confidence: "high"
+confidence: "low"
 sources: ["https://www.turismosevilla.org/es/eventos-y-fiestas/xviii-festival-soberao-jazz-de-dos-hermanas-2024", "https://wanderlog.com/place/details/338372/pub-soberao-jazz", "https://twitter.com/clubsoberaojazz", "https://www.facebook.com/SoberaoJazzFest/", "https://www.tripadvisor.es/Attraction_Review-g659305-d7797393-Reviews-Soberao_Jazz-Dos_Hermanas_Province_of_Seville_Andalucia.html"]
 ---
 

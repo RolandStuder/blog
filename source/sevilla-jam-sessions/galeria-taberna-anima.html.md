@@ -7,7 +7,7 @@ contact: "C/ Miguel Cid, 80, Sevilla - 954386708"
 website: "https://animataberna.wordpress.com/"
 available_equipment: []
 tags: ["flamenco", "bi-weekly", "long-established", "local-talent", "mixed-programming"]
-confidence: "high"
+confidence: "low"
 sources: ["https://3si.es/live-music-in-sevilla/", "https://oasisbackpackershostels.com/best-live-music-clubs-and-venues-in-seville-spain/", "https://south.tours/magazine/live-music-in-seville-top-15-unmissable-places/"]
 ---
 

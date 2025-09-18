@@ -7,7 +7,7 @@ contact: "Calle Procurador, 19, Barrio de Triana"
 website: "https://www.facebook.com/salaelcachorro/"
 available_equipment: []
 tags: ["weekly", "saturday-afternoon", "triana", "cultural-space", "gastronomic"]
-confidence: "high"
+confidence: "low"
 sources: ["https://www.facebook.com/salaelcachorro/", "https://www.tripadvisor.com/Attraction_Review-g187443-d4273117-Reviews-Sala_El_Cachorro-Seville_Province_of_Seville_Andalucia.html", "https://shawnhennessey.substack.com/p/sevilla-jazz", "https://www.escenaensevilla.es/locales-teatro/sala-el-cachorro"]
 ---
 

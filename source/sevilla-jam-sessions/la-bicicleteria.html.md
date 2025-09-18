@@ -7,7 +7,7 @@ contact: "C/ 36, C. Feria, 41002 Sevilla"
 website: "https://theeuropeanbarguide.com/bicicleteria-seville/"
 available_equipment: []
 tags: ["underground", "bohemian", "cash-only", "pet-friendly", "weekly"]
-confidence: "high"
+confidence: "low"
 sources: ["https://theculturetrip.com/europe/spain/articles/the-best-bars-in-central-seville-for-live-music", "https://theeuropeanbarguide.com/bicicleteria-seville/", "https://shawnhennessey.substack.com/p/sevilla-jazz", "https://3si.es/live-music-in-sevilla/"]
 ---
 

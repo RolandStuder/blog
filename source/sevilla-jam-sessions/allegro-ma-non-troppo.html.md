@@ -7,7 +7,7 @@ contact: "Instagram @allegrosevilla"
 website: "https://www.facebook.com/allegromanontropp/"
 available_equipment: []
 tags: ["weekly", "sunday-night", "mediterranean", "cavern-like", "intimate"]
-confidence: "high"
+confidence: "low"
 sources: ["https://www.facebook.com/allegromanontropp/", "https://www.instagram.com/allegrosevilla/", "https://3si.es/live-music-in-sevilla/", "https://shawnhennessey.substack.com/p/sevilla-jazz"]
 ---
 
