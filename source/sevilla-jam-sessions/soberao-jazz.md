@@ -1,7 +1,6 @@
 ---
 title: "Soberao Jazz Club Jam Sessions"
 location: "C. la Francesa, 34, 41701 Dos Hermanas, Sevilla, Spain"
-city: "Dos Hermanas (near Sevilla)"
 usual_schedule: "Wednesday to Sunday jam sessions (?), after concerts until closing"
 genres: ["jazz", "bossa", "boleros", "varied-musical-styles"]
 contact: "C. la Francesa, 34, 41701 Dos Hermanas"

@@ -1,7 +1,6 @@
 ---
 title: "Sala EVEN Jam Sessions"
 location: "C/ Jose Diaz, 5, 41009 Sevilla, Spain"
-city: "Sevilla"
 usual_schedule: "Starting new series (?)"
 genres: ["all-styles", "rock", "pop", "alternative", "avant-garde"]
 contact: "Instagram @adriansfdez"

@@ -1,7 +1,6 @@
 ---
 title: "La Bicicleteria Jam Sessions"
 location: "C/ 36, C. Feria, 41002 Sevilla, España (Feria barrio)"
-city: "Sevilla"
 usual_schedule: "Tuesday ~11:00 PM + weekly"
 genres: ["jazz", "local-musicians", "bohemian"]
 contact: "C/ 36, C. Feria, 41002 Sevilla"

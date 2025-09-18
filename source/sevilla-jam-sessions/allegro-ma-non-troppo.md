@@ -1,7 +1,6 @@
 ---
 title: "Allegro Ma Non Troppo Sunday Jam"
 location: "Across from Hotel Gil, Macarena neighborhood, Sevilla"
-city: "Sevilla"
 usual_schedule: "Sunday evenings"
 genres: ["jazz", "balkan", "fado", "mediterranean"]
 contact: "Instagram @allegrosevilla"

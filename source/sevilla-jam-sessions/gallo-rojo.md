@@ -1,7 +1,6 @@
 ---
 title: "Gallo Rojo - Bad Jam Session"
 location: "C. Madre María de la Purísima, 9, Casco Antiguo, 41003 Sevilla, Spain"
-city: "Sevilla"
 usual_schedule: "Friday 7:30 PM"
 genres: ["jazz", "bebop", "manouche", "new-orleans-trad"]
 contact: "C. Madre María de la Purísima, 9, Casco Antiguo, 41003 Sevilla"

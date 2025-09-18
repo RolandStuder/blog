@@ -1,7 +1,6 @@
 ---
 title: "Tokatu Music Club Jam Sessions"
 location: "Ctra la isla, km 0.1 pol fuente del rey, nave I, Dos Hermanas, Spain"
-city: "Dos Hermanas (near Seville)"
 usual_schedule: "Regular jam sessions (?)"
 genres: ["all-styles", "various"]
 contact: "http://www.tokatu.com/"

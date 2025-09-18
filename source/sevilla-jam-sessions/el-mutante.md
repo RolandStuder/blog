@@ -1,7 +1,6 @@
 ---
 title: "El Mutante (Bar Mutante) Open Mic & Jams"
 location: "C/ Fresa 15, Casco Antiguo, Sevilla"
-city: "Sevilla"
 usual_schedule: "Open mic nights and improvised jams (?)"
 genres: ["pop", "rock", "jazz", "hip-hop", "underground"]
 contact: "C/ Fresa 15, Casco Antiguo, Sevilla"

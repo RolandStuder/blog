@@ -1,7 +1,6 @@
 ---
 title: "Galería Taberna Ánima Flamenco Jams"
 location: "Near Alameda de Hércules, Sevilla"
-city: "Sevilla"
 usual_schedule: "Wednesday & Friday flamenco jams, Thursday & Sunday concerts"
 genres: ["flamenco", "jazz", "rock"]
 contact: "Near Alameda de Hércules"

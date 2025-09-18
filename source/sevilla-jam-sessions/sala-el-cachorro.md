@@ -1,7 +1,6 @@
 ---
 title: "Sala El Cachorro Saturday Jazz Sessions"
 location: "Calle Procurador, 19, Barrio de Triana, Sevilla"
-city: "Sevilla"
 usual_schedule: "Saturday afternoons"
 genres: ["jazz"]
 contact: "Calle Procurador, 19, Barrio de Triana"

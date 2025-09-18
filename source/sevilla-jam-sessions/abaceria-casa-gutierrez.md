@@ -1,7 +1,6 @@
 ---
 title: "Abaceria Casa Gutierrez Bi-weekly Jazz Jam"
 location: "Near Feria Market, Calle Amargura, Sevilla"
-city: "Sevilla"
 usual_schedule: "Every other Tuesday 9:00 PM (bi-weekly)"
 genres: ["jazz"]
 contact: "Calle Amargura, Sevilla"

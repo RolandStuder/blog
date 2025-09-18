@@ -1,7 +1,6 @@
 ---
 title: "ConTenedor Tuesday Jazz"
 location: "Calle San Luis, Sevilla"
-city: "Sevilla"
 usual_schedule: "Tuesday 8:00 PM"
 genres: ["jazz"]
 contact: "Calle San Luis, Sevilla"

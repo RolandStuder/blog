@@ -1,7 +1,6 @@
 ---
 title: "ASSEJAZZ Jam Sessions"
 location: "Platea-Odeon-La Imperdible, CC Plaza de Armas, Pl. la Legión Sevilla, 41001 España"
-city: "Sevilla"
 usual_schedule: "Sundays 1:00 PM"
 genres: ["jazz", "standards"]
 contact: "C. Escarpia, 2, Norte, 41008 Sevilla, Spain"
