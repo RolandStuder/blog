@@ -91,6 +91,16 @@ layout: layout
 
 <h1>Sevilla Jam Sessions</h1>
 
+<div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 1.5rem; margin: 2rem 0;">
+  <h2 style="color: #856404; margin: 0 0 1rem 0; font-size: 1.2rem;">⚠️ Work in Progress</h2>
+  <p style="margin: 0 0 1rem 0; color: #856404;">
+    <strong>Important:</strong> We are currently compiling this information and there may be many inaccuracies, outdated schedules, or missing details. Venue information, schedules, and contact details should be verified directly with each venue before visiting.
+  </p>
+  <p style="margin: 0; color: #856404;">
+    <strong>Help us improve:</strong> If you have corrections, updates, or know of additional venues, please contact us at <a href="mailto:hello@rolihey.com" style="color: #856404; text-decoration: underline;">hello@rolihey.com</a>
+  </p>
+</div>
+
 <p>Comprehensive guide to jam sessions and live music venues for musicians in Sevilla, Spain. Click on any venue to see full details.</p>
 
 <div class="venue-grid">
@@ -140,6 +150,16 @@ layout: layout
     </summary>
 
     <div class="venue-details">
+      <% if venue[:confidence] == 'medium' %>
+        <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 0.75rem; margin-bottom: 1rem; font-size: 0.9rem;">
+          <strong>⚠️ Medium Confidence:</strong> Some information may be incomplete or uncertain. Please verify details before visiting.
+        </div>
+      <% elsif venue[:confidence] == 'low' %>
+        <div style="background: #f8d7da; border-left: 4px solid #dc3545; padding: 0.75rem; margin-bottom: 1rem; font-size: 0.9rem;">
+          <strong>⚠️ Low Confidence:</strong> Information is uncertain or based on limited sources. Please verify all details before visiting.
+        </div>
+      <% end %>
+
       <dl class="venue-meta">
         <% if venue[:location] && !venue[:location].empty? %>
           <dt>Location:</dt>
