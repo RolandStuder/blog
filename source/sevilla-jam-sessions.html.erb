@@ -206,7 +206,7 @@ layout: layout
       </dl>
 
       <div class="venue-content">
-        <%= simple_format(venue[:content]) %>
+        <%= Tilt['markdown'].new { venue[:content] }.render %>
       </div>
 
       <% if venue[:sources].any? %>
