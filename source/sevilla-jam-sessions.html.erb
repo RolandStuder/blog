@@ -140,7 +140,12 @@ layout: layout
 <% venues.each do |venue| %>
   <details class="venue-card confidence-<%= venue[:confidence] %>">
     <summary class="venue-summary">
-      <h3><%= venue[:title] %></h3>
+      <h3>
+        <%= venue[:title] %>
+        <% if venue[:website] && !venue[:website].empty? %>
+          <a href="<%= venue[:website] %>" target="_blank" style="font-size: 0.8rem; margin-left: 0.5rem; color: #0066cc; text-decoration: none;">🔗</a>
+        <% end %>
+      </h3>
       <p class="venue-quick-info">
         <strong><%= venue[:schedule] %></strong>
         <% if venue[:genres].any? %>
