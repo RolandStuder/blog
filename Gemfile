@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# Required for Ruby 3.4+
+gem 'bigdecimal'
+gem 'mutex_m'
+
 # Middleman Gems
 gem 'middleman'
 gem 'middleman-blog'
