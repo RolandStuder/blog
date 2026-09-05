@@ -2,7 +2,7 @@
 title: "Making my blog more me"
 date: 2026-09-05
 tags: [rails, ruby, programming]
-published: false
+published: true
 chat_gpt: none
 ---
 
