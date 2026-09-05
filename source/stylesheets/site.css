@@ -566,3 +566,8 @@ ul li {
 ul.article-list {
     list-style-type: none;
 }
+
+/* Tracks */
+.piece audio { width: 100%; display: block; margin: 1rem 0 0.3rem; }
+.piece-meta { color: #666; font-size: 0.9rem; margin: 0 0 1.5rem; }
+.piece-marker { color: #666; margin-right: 0.2rem; }

@@ -14,7 +14,8 @@ index: true
 <% end %>
 <ul class="article-list">
   <% current_year = nil %>
-  <% blog.articles.each do |article| %>
+  <% entries = (blog(:blog).articles + blog(:tracks).articles).sort_by(&:date).reverse %>
+  <% entries.each do |article| %>
     <% if current_year != article.date.year %>
       <% unless current_year.nil? %>
         </ul>
@@ -24,6 +25,9 @@ index: true
       <% current_year = article.date.year %>
     <% end %>
     <li>
+      <% if article.data.audio %>
+        <span class="piece-marker" title="Music">♫</span>
+      <% end %>
       <%= link_to article.title, article %>
       <time datetime="<%= article.date.strftime('%Y-%m-%d') %>">
         <%= article.date.strftime('%B, %e, %Y') %>

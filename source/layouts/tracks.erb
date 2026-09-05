@@ -1,0 +1,29 @@
+<% piece = current_article %>
+<% slug = File.basename(File.dirname(piece.source_file)) %>
+<% if piece.data.page %>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= piece.title %> – Roland Studer</title>
+    <%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/tracks/<%= slug %>/page.css">
+  </head>
+  <body>
+    <%= partial "tracks/#{slug}/page", locals: { piece: piece, notes: yield } %>
+    <script src="/tracks/<%= slug %>/page.js"></script>
+  </body>
+</html>
+<% else %>
+<% wrap_layout :layout do %>
+  <article class="piece">
+    <audio controls preload="metadata" src="<%= piece.data.audio %>"></audio>
+    <p class="piece-meta"><%= [piece.data.instruments, piece.data.tonality, piece.data.duration].compact.join(' · ') %> · <a href="<%= piece.data.audio %>">MP3</a></p>
+    <%= yield %>
+  </article>
+  <p><a href="/tracks/">All pieces</a></p>
+<% end %>
+<% end %>

@@ -1,0 +1,17 @@
+---
+title: "Music"
+blog: tracks
+---
+
+<p>Starting to publish some musical sketches I created.</p>
+
+<ul class="article-list">
+<% blog(:tracks).articles.each do |piece| %>
+  <li>
+    <span class="piece-marker">♫</span>
+    <%= link_to piece.title, piece %>
+    <time datetime="<%= piece.date.strftime('%Y-%m-%d') %>"><%= piece.date.strftime('%B, %e, %Y') %></time>
+    <% if piece.data.published == false %><sup>Unpublished</sup><% end %>
+  </li>
+<% end %>
+</ul>

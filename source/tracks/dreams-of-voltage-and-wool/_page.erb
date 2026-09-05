@@ -1,0 +1,28 @@
+<canvas id="scene"></canvas>
+<div class="crt"></div>
+<div class="rainfog"></div>
+
+<header class="neon-title">
+  <div class="kanji" aria-hidden="true">電気羊の夢</div>
+  <h1 data-glitch="<%= piece.title %>"><%= piece.title %></h1>
+  <p class="sub"><%= piece.data.instruments %> · <%= piece.date.year %> · Roland Studer</p>
+</header>
+
+<button class="start" id="start">
+  <span class="pulse">▶</span>
+  <span class="hint">Click. Listen. Rain.</span>
+</button>
+
+<aside class="notes" id="notes">
+  <%= notes %>
+</aside>
+
+<nav class="hud">
+  <a href="/tracks/">← All pieces</a>
+  <span id="time">0:00</span>
+  <span class="help">Drag = seek · Scroll = volume · The sheep is the playhead</span>
+  <a href="<%= piece.data.audio %>">MP3</a>
+</nav>
+
+<audio id="audio" preload="auto" src="<%= piece.data.audio %>"></audio>
+<script>window.PIECE = { title: <%= piece.title.to_json %>, audio: <%= piece.data.audio.to_json %> };</script>

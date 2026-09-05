@@ -37,6 +37,7 @@ ignore 'sevilla-jam-sessions/*'
 # Activate and configure blog extension
 
 activate :blog do |blog|
+  blog.name = "blog"
   # This will add a prefix to all links, template references and source paths
 
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
@@ -56,6 +57,17 @@ activate :blog do |blog|
 
   # Enable pagination
   # blog.page_link = "page/{num}"
+end
+
+# Tracks: a second collection of composed pieces.
+# Each piece is a folder source/tracks/<slug>/ holding index.html.md, its mp3 and,
+# when `page: true`, its own _page.erb / page.css / page.js for a full-page experience.
+activate :blog do |blog|
+  blog.name = "tracks"
+  blog.prefix = "tracks"
+  blog.sources = "{title}/index.html"
+  blog.permalink = "{title}/index.html"
+  blog.layout = "tracks"
 end
 
 page "/feed.xml", layout: false
