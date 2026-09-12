@@ -17,6 +17,7 @@ It is impressive what AI can do, it is quite thorough, thinks about many angles,
 Claude feels like an overeager teenager, trying too hard to prove themselves. Only that it's not my child, I don't educate it. Some company does. And there are a million versions of that teenager out there. So who's in control?
 
 Because now we start seeing things like these:
+
 - [OpenAI attack against rubygems](https://www.rubyhack.ai)
 - [Accidental attack against HuggingFace](https://simonwillison.net/2026/Aug/7/openai-timeline/)
 
