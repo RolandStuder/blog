@@ -8,7 +8,10 @@
 
     <title>Rolis Blog<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog(:blog).options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/site.css"  %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/site.css">
+    <% if (css = article_stylesheet) %>
+      <link rel="stylesheet" type="text/css" href="<%= css.url %>">
+    <% end %>
 
     <style type="text/css">
       <%= Rouge::Themes::Github.render(:scope => '.highlight') %>

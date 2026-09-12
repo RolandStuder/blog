@@ -1,0 +1,35 @@
+h1.main-title {
+  font-weight: 100;
+  position: relative;
+  animation: reverse-shift 2s ease-in both;
+  animation-delay: 0.5s;
+
+  &:before {
+    content: "A shift in agency";
+    position: absolute;
+    animation: title-shift 2s ease-in both;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes title-shift {
+  from {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+  to {
+    transform: translateX(4em);
+    filter: blur(10px);
+  }
+}
+
+@keyframes reverse-shift {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-2em);
+    opacity: 0.8;
+  }
+}

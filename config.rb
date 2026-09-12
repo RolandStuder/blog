@@ -80,11 +80,17 @@ page "/feed.xml", layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  # A blog post may ship its own stylesheet next to it:
+  #   source/posts/my-post.html.md
+  #   source/posts/my-post.css
+  # Returns the stylesheet resource if one exists, nil otherwise.
+  def article_stylesheet(article = current_article)
+    return nil if article.nil?
+    base = File.basename(article.source_file).sub(/\..*\z/, '')
+    sitemap.find_resource_by_path("/posts/#{base}.css")
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
