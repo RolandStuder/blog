@@ -1,0 +1,200 @@
+/* Casio Dreams – the Casiotone in the dark. The page borrows the instrument's own
+   panel typography: bold italic badge, tiny tracked uppercase labels, teal accents. */
+:root {
+  color-scheme: dark;
+  --ink: #e8e6df;
+  --ink-dim: #9a988f;
+  --teal: #4fd1c5;
+  --rule: #2c2c2c;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html, body { margin: 0; min-height: 100%; background: #121212; color: var(--ink); font-family: var(--sans); }
+.stage { position: relative; overflow: clip; min-height: 100vh; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr auto auto; gap: 1.5rem; padding: 2.5rem clamp(1rem, 4vw, 4rem) 3rem; box-sizing: border-box; }
+
+/* panel-style labels: RHYTHM, TONE … */
+.label { margin: 0 0 .6rem; font-size: .68rem; letter-spacing: .22em; text-transform: uppercase; color: var(--teal); }
+.label::before { content: ""; display: inline-block; width: 1.4rem; height: 1px; background: var(--teal); vertical-align: middle; margin-right: .6rem; }
+
+/* title like the "Casiotone MT-140" badge, initials teal like "Pulse Code Modulation" */
+.title h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 800; font-style: italic; letter-spacing: -.02em; line-height: 1; }
+.title h1 b { color: var(--teal); font-weight: 800; }
+.title .sub { margin: .7rem 0 0; font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-dim); }
+
+.instrument { position: relative; display: grid; place-items: center; padding: 6rem 0 3rem; }
+/* a soft pool of light sets the instrument off from the void */
+/* the light box is far larger than the instrument so the glow is never clipped by its edges */
+.spot, .spot::after { position: absolute; inset: -100vh -60vw; pointer-events: none; transition: opacity 1.2s; z-index: 0; }
+.ct-wrap, .stop { z-index: 1; }
+.spot { background: radial-gradient(ellipse 60vw 42vw at 50% 50%, rgba(255, 236, 200, .45), rgba(255, 236, 200, .18) 40%, rgba(255, 236, 200, .05) 65%, transparent 80%); }
+.spot::after { content: ""; inset: 0; opacity: 0;
+  background: radial-gradient(ellipse 16vw 16vw at calc(50% - 0.27 * min(1200px, 92vw)) 47%, rgba(255, 236, 200, .3), rgba(255, 236, 200, .08) 45%, transparent 70%); }
+/* while off, the light falls on the power slider only */
+body.off .spot { opacity: .35; }
+body.off .spot::after { opacity: 1; }
+body.off .casiotone { cursor: pointer; }
+body.off .title, body.off .notes, body.off .hud { opacity: .55; transition: opacity .8s; }
+.title, .notes, .hud { transition: opacity .8s; }
+
+
+/* the notes read like a page from the manual */
+.notes { max-width: 38rem; padding-top: 1.5rem; font-size: 1.05rem; line-height: 1.6; color: #cfcdc4; }
+.notes p { margin: 0 0 1em; }
+.notes a { color: var(--teal); text-decoration: none; border-bottom: 1px solid currentColor; }
+.notes h2, .notes h3 { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--teal); margin: 2em 0 .8em; }
+.notes em { color: var(--ink); }
+
+/* hud: tiny panel labels + a Casio LCD for the time */
+.hud { display: flex; align-items: center; gap: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-dim); }
+.hud a { color: inherit; text-decoration: none; transition: color .15s; }
+.hud a:hover { color: var(--teal); }
+.lcd { display: inline-block; padding: .25rem .6rem; border-radius: 2px; background: #97a48a; color: #1d251c; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: .85rem; letter-spacing: .12em;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.6), 0 0 0 2px #0c0c0c; text-transform: none; }
+body:not(.playing) .lcd { color: #3a4638; }
+
+.ct-wrap { position: relative; width: 100%; max-width: 1200px; aspect-ratio: 1052 / 336; }
+.ct-wrap::before { content: ""; position: absolute; left: .6%; right: .6%; top: 2%; bottom: 2.5%; border-radius: 10px; background: #141414;
+  box-shadow: 0 30px 40px rgba(0,0,0,.85), 0 4px 6px rgba(0,0,0,.6); }
+.casiotone { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.casiotone .key .face { transition: fill .08s; }
+.casiotone .key.lit.white .face { fill: #ffd27a; }
+.casiotone .key.lit.black .face { fill: #b07a2a; }
+.casiotone .button { cursor: pointer; }
+
+/* one colour per part */
+.casiotone .key.lit[data-inst="0"] .face { fill: #4fd1c5; }   /* mid    – teal   */
+.casiotone .key.lit[data-inst="1"] .face { fill: #ffd27a; }   /* arp    – amber  */
+.casiotone .key.lit[data-inst="2"] .face { fill: #e0602a; }   /* bass   – orange */
+.casiotone .key.lit[data-inst="3"] .face { fill: #d8322b; }   /* lead   – red    */
+.casiotone .key.lit .face { transition: fill 0s; }
+.casiotone .button.pressed rect { transform: translateY(1px); opacity: .7; }
+.casiotone .button rect { transition: transform .05s, opacity .05s; }
+.casiotone .led.on { fill: #ff3b2f; }
+.casiotone .led-glow { opacity: 0; transition: opacity .05s; }
+.casiotone .led.on + .led-glow { opacity: .55; }
+
+/* ---- decay: three keys fall off while the track plays ---- */
+.casiotone { overflow: visible; }
+.casiotone .key { transform-box: fill-box; transform-origin: center; }
+@keyframes ct-fall {
+  0%   { transform: translate(0, 0) rotate(0); opacity: 1; }
+  15%  { transform: translate(0, 4px) rotate(calc(var(--dir, 1) * 3deg)); }
+  100% { transform: translate(var(--fall-x, calc(var(--dir, 1) * 30px)), var(--fall-y, 340px)) rotate(calc(var(--dir, 1) * 70deg)); opacity: 0; }
+}
+.casiotone .key.gone { animation: ct-fall 1.6s cubic-bezier(.45, 0, .9, .5) forwards; pointer-events: none; transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .casiotone .key.gone { animation: none; opacity: 0; }
+}
+
+/* ---- power ---- */
+.casiotone #ct-slider-power .hit { cursor: pointer; }
+.casiotone #ct-slider-power .knob-group { transition: transform .12s cubic-bezier(.2, 1.4, .5, 1); }
+.casiotone.on #ct-slider-power .knob-group, .casiotone.flicker #ct-slider-power .knob-group { transform: translateY(-26px); }
+/* while off: the power slider is the only thing alive */
+.casiotone:not(.on):not(.flicker) #ct-keys, .casiotone:not(.on):not(.flicker) #ct-rhythm,
+.casiotone:not(.on):not(.flicker) #ct-tone, .casiotone:not(.on):not(.flicker) #ct-note-labels,
+.casiotone:not(.on):not(.flicker) #ct-speaker { opacity: .8; transition: opacity .6s; }
+.casiotone #ct-keys, .casiotone #ct-rhythm, .casiotone #ct-tone, .casiotone #ct-note-labels, .casiotone #ct-speaker { transition: opacity .6s; }
+.casiotone .power-hint { pointer-events: none; }
+.casiotone.on .power-hint, .casiotone.flicker .power-hint { display: none; }
+.casiotone .power-hint .halo, .casiotone .power-hint .halo-soft { transform-box: fill-box; transform-origin: center; animation: ct-halo 1.6s ease-in-out infinite; }
+@keyframes ct-halo {
+  0%, 100% { opacity: .25; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+.casiotone .power-hint .ghost { animation: ct-ghost 1.6s ease-in-out infinite; }
+@keyframes ct-ghost {
+  0%, 15% { opacity: 0; transform: translateY(0); }
+  30% { opacity: .9; transform: translateY(0); }
+  70% { opacity: .9; transform: translateY(-26px); }
+  100% { opacity: 0; transform: translateY(-26px); }
+}
+.casiotone #ct-slider-power .knob { transition: fill .3s, stroke .3s; }
+.casiotone:not(.on):not(.flicker) #ct-slider-power:hover .knob { fill: #4fd1c5; }
+.casiotone:not(.on):not(.flicker) #ct-slider-power:hover .halo, .casiotone:not(.on):not(.flicker) #ct-slider-power:hover .halo-soft { animation-duration: .8s; }
+@media (prefers-reduced-motion: reduce) {
+  .casiotone .power-hint .halo, .casiotone .power-hint .ghost { animation: none; opacity: .9; }
+}
+/* everything that glows is dark until powered */
+.casiotone #ct-logo, .casiotone #ct-led-beat, .casiotone #ct-rhythm text, .casiotone #ct-tone text, .casiotone #ct-note-labels text { transition: opacity .3s; }
+.casiotone:not(.on):not(.flicker) #ct-logo { opacity: .35; }
+.casiotone.flicker #ct-logo { animation: ct-flicker .9s steps(1) forwards; }
+.casiotone.flicker #ct-led-beat { animation: ct-flicker .9s steps(1) forwards; fill: #ff3b2f; }
+@keyframes ct-flicker {
+  0% { opacity: 1; } 12% { opacity: .2; } 20% { opacity: 1; } 35% { opacity: .1; }
+  45% { opacity: .9; } 60% { opacity: .15; } 75% { opacity: .7; } 100% { opacity: .1; }
+}
+/* callout */
+.casiotone .callout { font-family: "Chalkboard SE", "Comic Sans MS", "Segoe Print", "Bradley Hand", cursive; opacity: .95; transition: opacity .4s; }
+.casiotone .callout-text { font-size: 30px; animation: ct-breathe 1.6s ease-in-out infinite; }
+@keyframes ct-breathe { 0%, 100% { opacity: .7; } 50% { opacity: 1; } }
+.casiotone .callout path:first-child { animation: ct-dash 1.2s linear infinite; }
+@keyframes ct-dash { to { stroke-dashoffset: -18; } }
+.casiotone #ct-slider-power:hover ~ * .callout, .casiotone .callout:hover { opacity: 1; }
+.casiotone.on .callout { opacity: 0; pointer-events: none; }
+.casiotone .callout-retry { display: none; }
+.casiotone.failed .callout-retry { display: inline; }
+.casiotone.failed .callout-text:not(.callout-retry) { display: none; }
+.casiotone.failed .callout { animation: ct-nudge .5s ease; }
+@keyframes ct-nudge { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-6px); } 60% { transform: translateX(5px); } }
+
+/* ---- comic sound squiggles on bass notes ---- */
+.casiotone .squiggle-set { transform-box: fill-box; transform-origin: right center; }
+.casiotone .squiggle-set.live { animation: ct-squiggle .55s ease-out forwards; }
+@keyframes ct-squiggle {
+  0%   { opacity: 0;  transform: translateX(10px) scale(.7); }
+  20%  { opacity: .9; transform: translateX(0) scale(1); }
+  100% { opacity: 0;  transform: translateX(-22px) scale(1.15); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .casiotone .squiggle-set.live { animation: none; }
+  .casiotone .callout path:first-child { animation: none; }
+}
+
+/* ---- stop button: a grey panel key like INTRO/ENDING, only while the instrument is on ---- */
+.stop { display: none; margin-top: 2rem; align-items: center; gap: .7rem; padding: .7rem 1.4rem; border: 0; border-radius: 3px;
+  background: linear-gradient(#a3a3a3, #7d7d7d); color: #111; font: inherit; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; cursor: pointer;
+  box-shadow: 0 3px 0 #2a2a2a, 0 6px 14px rgba(0,0,0,.6); transition: transform .06s, box-shadow .06s; }
+.stop:active { transform: translateY(2px); box-shadow: 0 1px 0 #2a2a2a, 0 3px 8px rgba(0,0,0,.6); }
+.stop-icon { width: .7rem; height: .7rem; background: #d8322b; border-radius: 1px; box-shadow: 0 0 6px rgba(216,50,43,.7); }
+body.playing .stop, body.paused .stop { display: inline-flex; }
+body.paused .stop-icon { width: 0; height: 0; border-style: solid; border-width: .4rem 0 .4rem .7rem; border-color: transparent transparent transparent #22b3a0; background: none; border-radius: 0; box-shadow: none; }
+body.dead .stop { display: none; }
+
+/* ---- dead: it played once, that was it ---- */
+.casiotone.dead .callout { opacity: .95; pointer-events: none; }
+.casiotone.dead #ct-logo { opacity: .35; }
+.casiotone.dead #ct-keys, .casiotone.dead #ct-rhythm, .casiotone.dead #ct-tone, .casiotone.dead #ct-note-labels, .casiotone.dead #ct-speaker { opacity: .7; }
+.casiotone.dead .power-hint { display: none; }
+.casiotone.dead { cursor: not-allowed; }
+
+/* ---- portrait phones: the instrument lies rotated down the page; only the callout stays upright ---- */
+.callout-m { display: none; }
+@media (orientation: portrait) and (max-width: 700px) {
+  .ct-wrap { aspect-ratio: 336 / 1052; }
+  .ct-wrap::before { left: 2%; right: 2%; top: .6%; bottom: .6%; }
+  .casiotone {
+    inset: auto; top: 50%; left: 50%;
+    width: calc(100% * 1052 / 336); height: calc(100% * 336 / 1052);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  /* svg +x now points down the screen */
+  .casiotone .key { --fall-x: 340px; --fall-y: calc(var(--dir, 1) * 30px); }
+  .casiotone .callout { display: none; }
+  /* html callout, pointing at the power slider (svg 23% along, 28% down → screen 72% across, 23% down) */
+  .callout-m { display: block; position: absolute; left: 72%; top: 23%; transform: translate(-50%, calc(-100% - 1.2rem)); text-align: center; white-space: nowrap;
+    font-family: "Chalkboard SE", "Comic Sans MS", "Segoe Print", "Bradley Hand", cursive; font-size: 1.5rem; color: #f4f1e8; pointer-events: none; transition: opacity .4s; }
+  .callout-m .callout-text { display: block; animation: ct-breathe 1.6s ease-in-out infinite; }
+  .casiotone.failed ~ .callout-m .callout-text { animation: ct-nudge .5s ease, ct-breathe 1.6s ease-in-out infinite; }
+  .callout-m .callout-retry { display: none; white-space: normal; max-width: 60vw; margin: 0 auto; }
+  .callout-m-line { display: block; width: 0; height: 1.1rem; margin: .3rem auto 0; border-left: 2px dashed #f4f1e8; }
+  .casiotone.failed ~ .callout-m .callout-text:not(.callout-retry) { display: none; }
+  .casiotone.failed ~ .callout-m .callout-retry { display: block; }
+  .casiotone.failed ~ .callout-m > * { animation: ct-nudge .5s ease; }   /* shake the children, not the positioned box */
+  .casiotone.on ~ .callout-m, .casiotone.flicker ~ .callout-m { opacity: 0; }
+  .casiotone.dead ~ .callout-m { opacity: 1; }
+  .casiotone.dead ~ .callout-m .callout-text { animation: none; }
+  /* off-state spotlight on the (now top-right) power slider */
+  .spot::after { background: radial-gradient(ellipse 22vw 22vw at calc(50% + .22 * 92vw) calc(50% - .78 * 92vw), rgba(255, 236, 200, .3), rgba(255, 236, 200, .08) 45%, transparent 70%); }
+  .spot { background: radial-gradient(ellipse 60vw 120vw at 50% 50%, rgba(255, 236, 200, .45), rgba(255, 236, 200, .18) 40%, rgba(255, 236, 200, .05) 65%, transparent 80%); }
+  .instrument { padding-top: 5rem; }
+}

@@ -20,3 +20,6 @@
 
 # Claude Code directory
 .claude/
+
+# Python bytecode from tools/
+__pycache__/

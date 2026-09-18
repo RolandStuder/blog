@@ -1,0 +1,35 @@
+<%# Casio Dreams – full-page player: the Casiotone MT-140 is the player. %>
+<main class="stage">
+  <header class="title">
+    <p class="label">Roland Studer · <%= piece.date.year %></p>
+    <h1><%= piece.title.split(' ').map { |w| "<b>#{w[0]}</b>#{w[1..]}" }.join(' ') %></h1>
+    <p class="sub"><%= piece.data.instruments %> · <%= piece.data.bpm %> BPM · Pulse Code Modulation</p>
+  </header>
+
+  <div class="instrument" id="instrument">
+    <div class="spot" aria-hidden="true"></div>
+    <div class="ct-wrap">
+      <%= partial "tracks/casio-dreams/casiotone" %>
+      <div class="callout-m" aria-hidden="true">
+        <span class="callout-text">turn it on</span>
+        <span class="callout-text callout-retry">try again, the power cable is finicky</span>
+        <span class="callout-m-line"></span>
+      </div>
+    </div>
+    <button class="stop" id="stop" type="button"><span class="stop-icon" aria-hidden="true"></span><span class="stop-label">Stop</span></button>
+  </div>
+
+  <aside class="notes" id="notes">
+    <p class="label">Notes</p>
+    <%= notes %>
+  </aside>
+
+  <nav class="hud">
+    <a href="/tracks/">◂ All pieces</a>
+    <span class="lcd"><span id="time">0:00</span></span>
+    <a href="<%= piece.data.audio %>">MP3 ▸</a>
+  </nav>
+</main>
+
+<audio id="audio" preload="auto" src="<%= piece.data.audio %>"></audio>
+<script>window.PIECE = { title: <%= piece.title.to_json %>, audio: <%= piece.data.audio.to_json %>, bpm: <%= piece.data.bpm %>, notes: "notes.json", offset: <%= piece.data.offset || 0 %> };</script>
