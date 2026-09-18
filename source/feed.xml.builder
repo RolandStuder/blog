@@ -27,6 +27,11 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       body = article.body
       # Feed readers often drop <audio>, so give them a plain link too.
       body = %(<p><audio controls src="#{audio}"></audio><br><a href="#{audio}">Listen to the MP3</a></p>) + body if audio
+      # Pieces with a full-page player deserve a nudge to leave the reader.
+      if article.data.page
+        page_url = URI.join(site_url, article.url)
+        body = %(<p><em>This post is a music track with its own dedicated player page. Check it out at <a href="#{page_url}">#{page_url}</a>.</em></p>) + body
+      end
       xml.content body, "type" => "html"
     end
   end
