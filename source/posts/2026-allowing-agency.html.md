@@ -6,7 +6,7 @@ published: true
 chat_gpt: none
 ---
 
-I'm so confused. So dizzy. Things are moving so fast...
+<span>I'm so confused.</span> <span>So dizzy.</span> <span>Things are moving so fast...</span>
 
 Six weeks ago, I described in ["A shift in agency"](/2026-a-shift-in-agency/), how AI is kind of like an overeager teenager that just wants to go ahead and do everything for me. Like it's storming off. And that I don't like this shift in agency. Then just around four weeks ago, I told the teenager: Okay, well, you go ahead. Show me what you can do.
 
@@ -21,12 +21,13 @@ Since then, I have…
 - … set up a remote server for my development work, where I run my Claude sessions, because my Macbook suffocated in parallel Chrome sessions and test runs.
 - … have brought down CI time from 35 minutes to five minutes (and we could easily bring it down more)
 - … removed one of our two parallel Tailwind versions (don't ask) by rewriting a ton of Tailwind classes across many public pages. And Claude did it in a controlled manner comparing screenshots, and comparing every single DOM element's computed CSS…
-- Taking care of smaller tickets is often now a thumbs up to a Github pull request.
 
-And the native App I built is already becoming old news, as I now work through pure voice chats and Claude writes my tickets, dependencies… I am quickly arriving to a place where I need my screen only to review UIs and code diffs.
+And the native App I built is already becoming old news, as I now work through pure voice chats and Claude writes my tickets, dependencies… I am racing towards a place where I need my screen only to review UIs and code diffs.
 
 All of this within four weeks.
 
 I'm just dizzy. It is scary what you can do. It's also very exciting.
 
 For now I'm trying to be an optimist and embrace the change and see what happens. So, with much confusion and restlessness, I step into these exciting terrifying times, and just hope that it won't be our doom.
+
+<p><small>The animation at the top of this post was made by Claude, under my direction.</small></p>
